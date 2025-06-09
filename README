@@ -1,0 +1,23 @@
+--Hey-- 
+--Welcome to Quote Pulse---
+
+QuotePulse is a toy that sends valuable to quotes to you. It gives you that disciplined mentality.
+
+example- I feel down, i set my quote pulse to generate the positive quotes i need by 6am before i start 
+the day. QuotePulse got you covered.
+
+QuotePulse is very practical and common type of backend system
+
+Handles the:
+User management
+Data storage
+API design
+Scheduled tasks
+
+core features
+User Management: User Registration, User Login, User Profile, Email Unsubscribe
+Quote Management: Store quotes(textm author, category)
+Quote Categories: Allow users to select their preferred categories eg (Bible, Psychology, etc)
+Daily Email Delivery System: Scheduled task to run once a day, Fetches all subscribed users, for each user select a random quote from their preferred categories, generate a personalized email.
+
+Robustness and Error Handling 
