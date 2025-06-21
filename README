@@ -21,3 +21,14 @@ Quote Categories: Allow users to select their preferred categories eg (Bible, Ps
 Daily Email Delivery System: Scheduled task to run once a day, Fetches all subscribed users, for each user select a random quote from their preferred categories, generate a personalized email.
 
 Robustness and Error Handling 
+
+QuotePulse is setting up Authentication
+This involves allowing users to register login, and protecting certain routes so only authenticated users can access them.
+
+We use JSON web tokens for authentication and Bcrypt.js for securely hashing passwords.
+
+Authentication
+
+This involves allowing users to register, login, and protecting the certain routes so only authenticated users can access them.
+Use JSON web token for authentication and Bcrypt.js for securely hashing passwords.
+

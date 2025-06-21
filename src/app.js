@@ -1,28 +1,26 @@
 const express = require('express');
-const app = express()
+const app = express();
 
-//--Middle ware--
-// body parser for json requests
-
+// Middleware
 app.use(express.json());
-// body parser for url-encoded requests 
+app.use(express.urlencoded({ extended: true }));
 
-app.use(express.urlencoded({ extended: true }))
+// Routes
+const authRoutes = require('./routes/authRoutes');
+app.use('/api/auth', authRoutes);
 
-
-// Routes 
+// Root endpoint
 app.get('/', (req, res) => {
-    res.send('Welcome to QuotePulse');
+  res.send('Welcome to QuotePulse');
 });
 
-
-app.use((err, req, res, next ) => {
-    console.error(err.stack);
-    res.status(err.statusCode || 500).json({
-        status: 'error',
-        message: err.message || 'An unexpected error occured',
-    });
+// Error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(err.statusCode || 500).json({
+    status: 'error',
+    message: err.message || 'An unexpected error occurred',
+  });
 });
 
 module.exports = app;
-
