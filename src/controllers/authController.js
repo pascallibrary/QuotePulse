@@ -1,6 +1,6 @@
 // handle the logic for handling user registration and login requests
 
-const User = require('../models/User');
+const User = require('../models/User'); 
 const jwt = require('jsonwebtoken');
 const config = require('../config');
 

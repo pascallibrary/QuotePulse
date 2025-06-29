@@ -32,3 +32,4 @@ Authentication
 This involves allowing users to register, login, and protecting the certain routes so only authenticated users can access them.
 Use JSON web token for authentication and Bcrypt.js for securely hashing passwords.
 
+With Authentication handled, the next logical step is to implement User Management. This will allow authenticated users to view their profile, and crucially for quotepulse, update their subscription status and preferred quote categories.
