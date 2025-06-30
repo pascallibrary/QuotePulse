@@ -33,3 +33,18 @@ This involves allowing users to register, login, and protecting the certain rout
 Use JSON web token for authentication and Bcrypt.js for securely hashing passwords.
 
 With Authentication handled, the next logical step is to implement User Management. This will allow authenticated users to view their profile, and crucially for quotepulse, update their subscription status and preferred quote categories.
+
+
+
+The Backend Architecture
+
+API (REST, GRAPHQL)
+Databases
+Authentication (JWT, OAuth)
+Server (NodeJS, express, etc)
+Business Logic
+Hosting (Cloud, Docker, etc)
+
+It is a monolith architecture (everything in one service/app) for now.
+
+
