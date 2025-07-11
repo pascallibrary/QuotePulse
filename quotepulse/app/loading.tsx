@@ -7,9 +7,7 @@ export default function Loading () {
                 <div className="absolute inset-0 w-12 h-12 mx-auto mt-2 border-4 border-transparent border-t-indigo-400 rounded-full animate-spin animate-reverse"></div>
               </div>
               <h2 className="text-xl font-semibold text-gray-700 nb-2">Loading QuotePulse</h2>
-              <p className="text-gray-500">Preparing your Inspirational quotes...</p>
             </div>
-
         </div>
     )
 }
