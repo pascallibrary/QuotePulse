@@ -12,6 +12,9 @@ export default function NotFound() {
       transition={{ duration: 0.6 }}
       className='relative min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6 text-center flex items-center justify-center'
     >
+
+    
+    
       {/* Top Right Navigation */}
       <div className='absolute top-4 right-4 flex gap-3'>
         <Link
