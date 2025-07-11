@@ -67,7 +67,7 @@ export default function Home() {
                   transition={{ delay: 2.2, duration: 1 }}
                 >
                     <Image
-                      src="/illustrations/Shopping_call_DrawKit_Vector_illustrations.png"
+                      src="/illustrations/Cheer up-pana.png"
                       alt="animated user interacting"
                       width={400}
                       height={400}
