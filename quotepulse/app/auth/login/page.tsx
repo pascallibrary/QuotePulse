@@ -29,7 +29,8 @@ export default function Login() {
 
             window.location.href = '/dashboard';
 
-        } catch (_err) {
+        } catch (err) {
+            console.error(err);
             setError('Invalid credentials');
         }
     };

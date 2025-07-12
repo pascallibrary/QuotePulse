@@ -31,7 +31,8 @@ export default function RegisterPage() {
 
             if(!response.ok) throw new Error('Registration failed')
                 window.location.href = '/dashboard';
-        } catch(_err) {
+        } catch(err) {
+            console.error(err);
             setError('Registration failed. Try again')
         }
     };
