@@ -3,10 +3,12 @@
 import { SetStateAction, useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Input } from '../../components/ui/Input';
-import { Button } from '../../components/ui/Button';
+import { Input } from '../../../components/ui/Input';
+import { Button } from '../../../components/ui/Button';
 
-export default function LoginPage() {
+
+
+export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -84,8 +86,9 @@ export default function LoginPage() {
             <Button
               type="submit"
               className="w-full px-6 py-3 bg-purple-600 text-white rounded-lg font-arcade hover:bg-purple-700 transition"
-            />
+            >
             🎮 Login
+            </Button>
         </motion.div>
 
        <motion.div

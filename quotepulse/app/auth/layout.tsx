@@ -2,8 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-
-export default function AuthLayout({ children } : { children: React.ReactNode}) {
+export default function Auth({ children } : { children: React.ReactNode}) {
     return (
         <main className='relative min-h-screen bg-gradient-to-br from-indigo-900 via-black-to-gray-900 text-white flex items-center justify-center p-6 overflow-hidden'>
           {/* Main Content */}

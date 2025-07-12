@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { Input } from '../../../components/ui/Input';
+import { Button } from '../../../components/ui/Button';
 
-import { Input } from '../../components/ui/Input';
-import { Button } from '../../components/ui/Button';
+
 
 export default function ResetPasswordPage() {
        const [email, setEmail] = useState('');
