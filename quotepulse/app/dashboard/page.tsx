@@ -215,7 +215,7 @@ export default function DashboardPage() {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
               >
-                <Link href="/dashboard/settings" className="block py-2 text-indigo-400 hover:underline">
+                <Link href="/settings" className="block py-2 text-indigo-400 hover:underline">
                   Settings
                 </Link>
                 <button
