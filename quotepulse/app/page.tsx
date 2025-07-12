@@ -37,12 +37,12 @@ export default function Home() {
                       animate={{ opacity: 1 }} 
                       transition={{ delay: 2, duration: 1 }}
                     >
-                        <Link href="/quotes" className='inline-flex items-center justify-center px-6 py-3 bg-purple-600 text-white rounded-lg font-arcade hover:bg-purple-700 transition'>
-                            🎮 Start Quotes
+                        <Link href="/auth/login" className='inline-flex items-center justify-center px-6 py-3 bg-purple-600 text-white rounded-lg font-arcade hover:bg-purple-700 transition'>
+                            🎮 Sign in 
                         </Link>
 
-                        <Link href="/categories" className='inline-flex items-center justify-center px-6 py-3 bg-indigo-600 text-white rounded-lg font-arcade hover:bg-indigo-700 transition'>
-                            🗂️ Explore Categories
+                        <Link href="/auth/register" className='inline-flex items-center justify-center px-6 py-3 bg-indigo-600 text-white rounded-lg font-arcade hover:bg-indigo-700 transition'>
+                              🎮 Register 
                         </Link>
 
                         <Link href='/subscribe' className='inline-flex items-center justify-center px-6 py-3 bg-blue-500 text-white rounded-lg font-arcade hover:bg-blue-600 transition'> 

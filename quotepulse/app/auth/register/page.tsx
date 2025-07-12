@@ -7,6 +7,7 @@ import { Input } from '../../../components/ui/Input';
 import { Button } from '../../../components/ui/Button';
 
 
+
 export default function RegisterPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -30,7 +31,7 @@ export default function RegisterPage() {
 
             if(!response.ok) throw new Error('Registration failed')
                 window.location.href = '/dashboard';
-        } catch(err) {
+        } catch(_err) {
             setError('Registration failed. Try again')
         }
     };

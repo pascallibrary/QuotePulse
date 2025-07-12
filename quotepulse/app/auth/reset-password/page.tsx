@@ -27,7 +27,7 @@ export default function ResetPasswordPage() {
 
             if(!response.ok) throw new Error('Failed to send reset link');
             setMessage('Password reset link sent to your email')
-          } catch(err) {
+          } catch(_err) {
             setError('Failed to send reset link. Please try again.')
           }
        };
