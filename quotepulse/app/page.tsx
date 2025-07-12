@@ -8,14 +8,6 @@ export default function Home() {
     return (
         <main className='relative min-h-screen bg-gradient-to-br from-indigo-900 via-black to-gray-900 text-white flex items-center justify-center p-6 overflow-hidden'>
 
-            {/* Animated Background Grid */}
-            <div className='absolute top-0 left-0 w-full h-full bg-[url("/grid.svg")] opacity-10 z-0' />
-
-            {/* Optional Falling Stars Overlay */}
-            <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none animate-fadeIn">
-                <div className='w-full h-full bg-[url("/stars.gif")] opacity-10'></div>
-            </div>
-
             {/* Main Content */}
             <div className='relative z-20 max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-40'>
 
