@@ -1,26 +1,28 @@
 const express = require('express');
 const cors = require('cors');
-const authRoutes = require('./routes/authRoutes');
-
 const app = express();
+
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
   origin: 'http://localhost:3000',
   credentials: true
 }));
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
 // Routes
+const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
+//const userRoutes = require('./routes/userRoutes');
+//app.use('/api/users', userRoutes);
 
-// Root test
+// Root endpoint
 app.get('/', (req, res) => {
-  res.send('Welcome to QuotePulse API');
+  res.send('Welcome to QuotePulse');
 });
 
-// Global error handler
+// Error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.statusCode || 500).json({
