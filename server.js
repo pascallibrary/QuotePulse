@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
-const app = require('./src/app');
+const app = require('./src/app'); 
 const connectDB = require('./src/utils/db');
 const config = require('./src/config');
 const cors = require('cors');
@@ -20,7 +20,7 @@ app.use(express.json());
 
 connectDB().then(() => {
     app.listen(PORT, () => {
-        console.log('Server running on port ${PORT}');
+        console.log(`Server running on port ${PORT}`);
         console.log(`Access the API at http://localhost:${PORT}`);
     });
 })
