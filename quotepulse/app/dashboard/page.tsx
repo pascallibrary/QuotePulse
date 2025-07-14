@@ -17,7 +17,7 @@ const mockLogs = [
 ];
 
 // Mock user data (replace with auth system)
-const user = {
+const user = { 
   name: 'John Doe',
   avatar: '/images/placeholder-avatar.png',
 };
