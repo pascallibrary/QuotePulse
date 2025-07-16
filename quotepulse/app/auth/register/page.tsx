@@ -7,7 +7,6 @@ import { Input } from '../../../components/ui/Input';
 import { Button } from '../../../components/ui/Button';
 
 
-
 export default function RegisterPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -28,6 +27,7 @@ export default function RegisterPage() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
             });
+
 
             if(!response.ok) throw new Error('Registration failed')
                 window.location.href = '/dashboard';
